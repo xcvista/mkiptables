@@ -9,7 +9,7 @@ cat << EOF
 EOF
 
 if [ -e .git -o -e ../.git ]; then
-    echo "#define GIT_VERSION $(git rev-parse --short HEAD)"
+    echo "#define GIT_VERSION \"$(git rev-parse --short HEAD)\""
 fi
 
 cat << EOF
