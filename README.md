@@ -14,7 +14,7 @@ is needed.
 This tool dumps its output to stdout for the ease of piping.
 
 Using this tool is really simple, as you just pipe `mkiptables` output into
-`iptables-restore` and it should be okay.
+`iptables-restore`, usually in `/etc/rc.local`, and it should be okay.
 
 ## More about this tool
 

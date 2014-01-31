@@ -8,26 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		1D0F3624189954CC00F3D3F5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F3623189954CC00F3D3F5 /* main.c */; };
-		1D0F3626189954CC00F3D3F5 /* mkiptables.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D0F3625189954CC00F3D3F5 /* mkiptables.1 */; };
+		1D0F36311899E6C000F3D3F5 /* help.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F36301899E6C000F3D3F5 /* help.c */; };
+		1D0F3635189A0CAC00F3D3F5 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F3634189A0CAC00F3D3F5 /* parser.c */; };
+		1D0F3638189A0D1900F3D3F5 /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F3637189A0D1900F3D3F5 /* global.c */; };
+		1D0F363B189A0D4800F3D3F5 /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F3639189A0D4800F3D3F5 /* vector.c */; };
+		1D0F363C189A139D00F3D3F5 /* portmap.conf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D0F3632189A066600F3D3F5 /* portmap.conf */; };
+		1D1E1418189AB315004E516B /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E1417189AB315004E516B /* writer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1D0F361E189954CC00F3D3F5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
-				1D0F3626189954CC00F3D3F5 /* mkiptables.1 in CopyFiles */,
+				1D0F363C189A139D00F3D3F5 /* portmap.conf in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D0F3620189954CC00F3D3F5 /* mkiptables */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mkiptables; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0F3623189954CC00F3D3F5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		1D0F3625189954CC00F3D3F5 /* mkiptables.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = mkiptables.1; sourceTree = "<group>"; };
+		1D0F362E189957ED00F3D3F5 /* options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		1D0F362F18995BB600F3D3F5 /* help.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help.h; sourceTree = "<group>"; };
+		1D0F36301899E6C000F3D3F5 /* help.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = help.c; sourceTree = "<group>"; };
+		1D0F3632189A066600F3D3F5 /* portmap.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = portmap.conf; sourceTree = "<group>"; };
+		1D0F3633189A0C5200F3D3F5 /* parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		1D0F3634189A0CAC00F3D3F5 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		1D0F3636189A0D1000F3D3F5 /* global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		1D0F3637189A0D1900F3D3F5 /* global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = global.c; sourceTree = "<group>"; };
+		1D0F3639189A0D4800F3D3F5 /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vector.c; sourceTree = "<group>"; };
+		1D0F363A189A0D4800F3D3F5 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		1D0F363D189A94CA00F3D3F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1D0F363E189A984300F3D3F5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D1E1416189AAF99004E516B /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		1D1E1417189AB315004E516B /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		1D6E4879189BA84F0026605D /* GNUmakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GNUmakefile; sourceTree = "<group>"; usesTabs = 1; };
+		1D6E487C189BDF0C0026605D /* version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
+		1D6E487D189BE1690026605D /* compiler.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = compiler.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +65,8 @@
 		1D0F3617189954CC00F3D3F5 = {
 			isa = PBXGroup;
 			children = (
+				1D0F363D189A94CA00F3D3F5 /* README.md */,
+				1D0F363E189A984300F3D3F5 /* .gitignore */,
 				1D0F3622189954CC00F3D3F5 /* mkiptables */,
 				1D0F3621189954CC00F3D3F5 /* Products */,
 			);
@@ -60,8 +83,22 @@
 		1D0F3622189954CC00F3D3F5 /* mkiptables */ = {
 			isa = PBXGroup;
 			children = (
+				1D6E4879189BA84F0026605D /* GNUmakefile */,
+				1D6E487D189BE1690026605D /* compiler.sh */,
+				1D0F362E189957ED00F3D3F5 /* options.h */,
 				1D0F3623189954CC00F3D3F5 /* main.c */,
-				1D0F3625189954CC00F3D3F5 /* mkiptables.1 */,
+				1D0F362F18995BB600F3D3F5 /* help.h */,
+				1D0F36301899E6C000F3D3F5 /* help.c */,
+				1D0F3633189A0C5200F3D3F5 /* parser.h */,
+				1D0F3634189A0CAC00F3D3F5 /* parser.c */,
+				1D1E1416189AAF99004E516B /* writer.h */,
+				1D1E1417189AB315004E516B /* writer.c */,
+				1D0F3636189A0D1000F3D3F5 /* global.h */,
+				1D0F3637189A0D1900F3D3F5 /* global.c */,
+				1D0F363A189A0D4800F3D3F5 /* vector.h */,
+				1D0F3639189A0D4800F3D3F5 /* vector.c */,
+				1D0F3632189A066600F3D3F5 /* portmap.conf */,
+				1D6E487C189BDF0C0026605D /* version.sh */,
 			);
 			path = mkiptables;
 			sourceTree = "<group>";
@@ -117,6 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0F36311899E6C000F3D3F5 /* help.c in Sources */,
+				1D0F3635189A0CAC00F3D3F5 /* parser.c in Sources */,
+				1D0F3638189A0D1900F3D3F5 /* global.c in Sources */,
+				1D0F363B189A0D4800F3D3F5 /* vector.c in Sources */,
+				1D1E1418189AB315004E516B /* writer.c in Sources */,
 				1D0F3624189954CC00F3D3F5 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +267,7 @@
 				1D0F362B189954CC00F3D3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
